@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Links</title>
+		<meta charset="utf-8">
+		<!--
+		links possuem vários estados, e cada um deles pode ser formatado de uma maneira diferente.
+		- link: o link não foi visitado	
+		- visited: o link já foi visitado
+		- hover: o mouse está sobre o link
+		- active: o link está sendo clicado
+		- focus: o link está em foco
+		
+		-->
+		<style type="text/css">
+
+			a {
+				padding: 5px 10px;
+				text-decoration: none;
+			}
+
+			/*Links não visitados*/
+			a:link {
+				color: blueviolet;
+			}
+
+			/*Links Visitados*/
+			a:visited{
+				color: gray;
+			}
+
+			/*Links Hover, passa o cursor sobre o link*/
+			a:hover{
+				color: #0ae812;
+				background: #023102;
+			}
+
+			/*Links Ativos, quando clicado*/
+			a:active{
+				color: #e4f371;
+			}
+			a:focus{
+				color: #f3e4f3;
+			}
+			
+
+		</style>
+		
+	</head>
+	<body>
+
+		<a href="https://www.google.com.br"> Google </a> |
+
+		<a href="https://www.microsoft.com/pt-br/"> Microsoft </a> |
+
+		<a href="https://www.oracle.com/br/business-analytics/essbase.html"> oracle </a> |
+
+		<a href="https://www.mongodb.com/"> MongoDB </a>
+
+	</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+Classes e IDs:
+Classes e IDs são seletores CSS que permitem aplicar estilos específicos a elementos HTML.
+- Classes: São usadas para aplicar estilos a um grupo de elementos.
+           elas são definidas com um ponto (.) seguido pelo nome da classe.
+           um elemento pode ter várias classes.
+- IDs: São usados para aplicar estilos a um único elemento.
+       eles são definidos com um símbolo de hash (#) seguido pelo nome do ID.
+       um ID deve ser único em uma página, ou seja, não pode haver mais de um elemento com o mesmo ID.
+-->
+<html>
+	<head>
+		<title>Classes e Ids</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			/* *************************************************************************
+			**** Usando classes para aplicar estilos a vários elementos HTML ****
+		  	*** também são utilizadas, quando se deseja utilizar exceções de estylos a um determinado elemento. 
+			*** onde previamente já foram estilizados com seletores.*** 
+			************************************************************************* */
+
+			.oijoijoijoijoijoijoij{
+				color: blue; /*cor*/
+				font-size: 60px; /* tamanho fonte*/
+				text-align: center; /* alinhamento do texto*/
+				font-family:Open Sans, sans-serif; /* tipo de fonte*/
+			}
+
+
+
+			/* Estilo para parágrafo */
+			.verde_parag_14px{
+				color: green; /*cor*/
+				font-size: 14px; /* tamanho fonte*/
+				text-align: center; /* alinhamento do texto*/
+				font-family:Open Sans, sans-serif; /* tipo de fonte*/
+				font-weight: bold; /* negrito*/
+				font-style: italic; 
+				text-decoration: underline; /* sublinhado*/	
+						
+				
+			}
+
+			/* Estilo para titulos */
+			.azul_titulos{
+				color: rgb(231, 11, 158); /*cor*/
+				font-size: 25px; /* tamanho fonte*/
+				text-align: left; /* alinhamento do texto*/
+				font-family:Open Sans, sans-serif; /* tipo de fonte*/
+			}
+
+			/* *************************************************************************
+			**** Usando IDs para aplicar estilos a um elementos HTML ****
+		  	*** deve ter único id em uma página, ou seja, não pode haver mais de um elemento com o mesmo ID.
+			*** OBS) se você usar um ID em outro lugar, o nvagador não vai reclamar, mas o estilo não vai funcionar corretamente.***
+				************************************************************************* */
+			#fundo_body{
+				background-color: olivedrab; /*cor de fundo*/
+				font-family: Arial, sans-serif; /* tipo de fonte*/
+				margin: 12px; /* margem*/
+			}
+			#header_layout{
+				background-color: orangered; /*cor de fundo*/
+				font-family: Arial, sans-serif; /* tipo de fonte*/
+				color: orange;
+				width: 100%; /* largura*/
+			}
+				
+			#imagem_logo{
+				width: 150px; /* largura*/
+				height: 45px; /* altura*/
+
+			}
+							
+
+		</style>
+
+	</head>
+	<body id="fundo_body"> 
+
+		<!-- header-->
+		<div id="header_layout">
+			<img src="imagens/logo.png" id="imagem_logo">
+				<ul>
+					<li>home</li>
+					<li>quem somos</li>
+					<li>contato</li>
+				</ul>
+		</div>
+
+		<!-- conteudo principal-->
+		<div>
+				
+			<div>
+				coluna 1
+			</div>
+
+			<div >
+				coluna 2
+			</div>
+
+			<div>
+				coluna 3
+			</div>
+
+		</div>
+
+		
+
+
+
+      
+		<h1 class="oijoijoijoijoijoijoij">Estilo CSS (cascading style sheets)</h1>
+		<p class="verde_parag_14px">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem. Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit. 
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem. Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit. 
+		</p>
+
+		<h1 class="azul_titulos">Formatações</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem. Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit. 
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem. Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit. 
+		</p>
+
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Internal CSS: O estilo é definido dentro de uma tag <style> no cabeçalho do documento HTML. 
+Essa abordagem é útil para aplicar estilos a um único documento,
+mas não é recomendada para grandes projetos, pois pode resultar em duplicação de código.
+
+OBS) o seletor é o nome do elemento HTML que você deseja formatar ou aplicar o estilo.
+
+problemas:
+1.  Se você quer aplicar o mesmo estilo no mesmo elemento em várias páginas,
+	você terá que repetir o mesmo código em todas as páginas.
+2.  Se você quiser mudar o estilo de um elemento em várias páginas,	
+	você terá que mudar o mesmo código em todas as páginas.
+-->
+<img src="seletor_declaracao.png">
+<img src="seletor_declacao_2.png">
+<html>
+	<head>
+		<title>Internal Style Sheet</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			h1 {
+				color: blue;
+				font-size: 60px;
+				text-align: center;
+				font-family:Open Sans, sans-serif;
+			}
+
+
+			p {
+				color: green;
+				font-size: 18px;
+			}
+			
+			/* Estilo para o corpo */
+
+			body {
+				background-color: #f0f0f0;
+				font-family: Arial, sans-serif;
+				margin: 10px;
+			}
+			
+	</style>
+	</head>
+
+	<body>
+
+		<h1>Estilo CSS (cascading style sheets)</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem. Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit. 
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem. Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit. 
+		</p>
+
+		<h1>Formatações</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem. Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit. 
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem. Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit. 
+		</p>
+
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- 
+
+Nessa aula, vamos ver fontes , cores e formatação de texto.
+ Fontes:
+ Nem toda fonte é suportada por todos os navegadores.
+ A fonte padrão é a Times New Roman. No entanto, podemos utilizar outras fontes.
+ para ver as fontes disponíveis, acesse:
+ https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+ Paleta de cores: https://www.html-color-codes.info/Codigos-de-Cores-HTML/
+ Plaeta de cores: https://color.adobe.com/pt/explore
+-->
+<html>
+	<head>
+		<title>Formatação de fontes e cores</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			.formatacao_h1 {
+				color: #139DF2
+				font-size: 30px;
+				font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+			}
+
+			.formatacao_h2 {
+				color: #4B83F2;
+				font-size: 15px;
+				/* perceba que a primeira fonte, verdana está entre aspas.
+				isso significa que ela á a primeira opção. Se ela não estiver disponível,
+				o navegador tentará usar a segunda fonte, Geneva. Se essa também não estiver
+				disponível, o navegador tentará usar a terceira fonte, sans-serif.
+				Se nenhuma das três fontes estiver disponível, o navegador usará a fonte padrão
+				que é a Times New Roman.
+				*/
+				font-family: "verdada", Geneva, sans-serif;
+			}
+
+			/*trabalhando com tamanho de fontes*/
+           
+			/*
+			Os paágrafos, por padrão são exibidos com tamanho de fonte 16px.	
+
+			  para texto, temos várias opções de formatação.
+			  px = tamanho fixo em pixels
+			  % = tamanho relativo ao tamanho da fonte padrão do navegador.= 16px
+			  em = tamanho relativo ao container pai.
+			*/
+			 .texto_geral{
+				/* usar primeiro 16px e depois 100%. Veja que nada se altera pois a porcentagem é em relação a 16px*/
+				font-size: 16px;
+				color:#01DF3A
+			 }
+
+
+
+		</style>
+
+	</head>
+	<body>
+
+		<h1 class="formatacao_h1">Cabeçalho com h1</h1>
+		<p>Lorem ipsium</p>
+		<p>1 2 3 4 5 6 7 8</p> 
+
+		<h1 class="formatacao_h2">cabeçalho com h2</h1>
+		<p>Lorem ipsium</p>
+		<p>1 2 3 4 5 6 7 8</p>
+
+		<!-- Trabalhando com tamanho de fontes-->
+        <p class="texto_geral">trabalhando com tamanho de fontes.</p>
+
+	</body>
+</html>

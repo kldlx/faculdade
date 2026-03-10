@@ -1,0 +1,29 @@
+RELATORIO EXECUCAO
+
+Total de Arquivos criados: 4
+Total de Pastas criadas: 3
+Data do Backup: 05/02/2026
+Hora do Backup:  1:18:00,34
+
+Local: GestorArquivos\
+
+Arquivos Criados:
+
+- relatorio.txt
+
+- dados.csv
+
+- config.ini
+
+- backup_completo.bak
+
+Pastas Criadas:
+
+- Backups
+
+- Documentos
+
+- Logs
+
+Desenvolvido por Kauã Oliveira de Lima
+

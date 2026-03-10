@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style type="text/css">
+    /*css internal*/
+    /* Define a largura do menu lateral e a cor de fundo */
+    .menu-vertical {
+      width: 200px;              /* largura do menu vertical */
+      background-color: #460de2;    /* cor de fundo escura */
+      padding: 0;                /* sem espaçamento interno */
+    
+    }
+    a {
+      display: block;            /* exibe os links como blocos */
+      color: white;             /* cor do texto */
+      padding: 10px;            /* espaçamento interno dos links */
+      text-decoration:none    /* remove o sublinhado dos links */
+    }
+ .dropdown {
+      position: relative;        /* posicionamento relativo para conter o dropdown */
+    }
+    
+    .dropbtn {
+      display: block;            /* ocupa toda a largura disponível */
+      color: white;              /* cor do texto */
+      padding: 14px 20px;        /* espaçamento interno */
+      text-decoration: none;     /* remove sublinhado */
+      text-align: left;          /* alinha o texto à esquerda */
+      border: none;              /* sem borda nos botões */
+      background: none;          /* sem fundo adicional */
+      font-size: 16px;           /* tamanho da fonte */
+      font-family: inherit;      /* herda fonte padrão */
+      cursor: pointer;           /* muda cursor para indicar clique */
+    }
+     .dropdown-content a {
+      padding-left: 30px;        /* recuo para diferenciar visualmente */
+      color: white;
+    }
+     /* Efeito de hover nos itens principais */
+    .menu-vertical a:hover, .dropdown:hover .dropbtn {
+      background-color: gray; /* muda o fundo ao passar o mouse */
+    }
+    
+    .dropdown-content a {
+      padding-left: 30px;        /* recuo para diferenciar visualmente */
+      color: white;
+    }
+
+    /* Mostra os itens do dropdown ao passar o mouse */
+    .dropdown:hover .dropdown-content {
+      display: block;            /* exibe o menu suspenso */
+    }
+
+</style>
+</head>
+<body>
+    
+
+    <!--inicio do menu vertical-->
+  <div class="menu-vertical">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+
+    <!-- Dropdown -->
+    <div class="dropdown">
+      <button class="dropbtn">Serviços ▾</button>
+      <div class="dropdown-content"> <!-- dropdown-content -->
+        <a href="#">Design Gráfico</a>
+        <a href="#">Desenvolvimento Web</a>
+        <a href="#">Marketing</a>
+      </div>
+    
+
+    <a href="#">Contato</a>
+  </div><!-- fim do menu vertical-->
+</body>
+</html>

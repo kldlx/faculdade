@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Horizontal com Dropdown</title>
+  <style>
+    /* Define o estilo da barra do menu */
+    .menu-horizontal {
+      background-color: #333; /* escolhe uma cor de fundo escura */
+      overflow: hidden;       /* impede que os elementos ultrapassem a div */
+    }
+
+    /* Estilo básico para todos os links do menu */
+    .menu-horizontal a {
+      float: left;             /* alinha os itens lado a lado na horizontal */
+      display: block;          /* transforma o link em bloco clicável inteiro */
+      color: white;            /* cor do texto */
+      text-align: center;      /* centraliza o texto dentro do item */
+      padding: 14px 20px;      /* espaçamento interno (topo/baixo e laterais) */
+      text-decoration: none;   /* remove o sublinhado dos links */
+    }
+
+    /* Efeito ao passar o mouse */
+    .menu-horizontal a:hover {
+      background-color: #575757; /* muda a cor de fundo ao passar o mouse */
+    }
+
+    /* Container para o dropdown */
+    .dropdown {
+      float: left;           /* segue na horizontal */
+      overflow: hidden;      /* esconde conteúdos que extrapolem a div */
+    }
+
+    /* Botão do dropdown (link com setinha) */
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;           /* remove a borda */
+      outline: none;          /* remove o contorno de foco */
+      color: white;           /* cor do texto */
+      padding: 14px 20px;     /* espaçamento interno */
+      background-color: inherit; /* usa a cor de fundo do menu */
+      font-family: inherit;   /* herda a fonte do pai */
+      margin: 0;              /* remove margens */
+    }
+
+    /* Efeito hover no botão dropdown */
+    .dropdown:hover .dropbtn {
+      background-color: #575757; /* muda cor ao passar o mouse */
+    }
+
+    /* Conteúdo do dropdown - inicialmente oculto */
+    .dropdown-content {
+      display: none;            /* começa escondido */
+      position: absolute;       /* posição absoluta em relação ao pai */
+      background-color: #f9f9f9; /* cor de fundo do dropdown */
+      min-width: 160px;         /* largura mínima do dropdown */
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* sombra para destacar */
+      z-index: 1;               /* traz para frente */
+    }
+
+    /* Estilo dos links dentro do dropdown */
+    .dropdown-content a {
+      float: none;               /* remove o float */
+      color: black;              /* cor do texto */
+      padding: 12px 16px;        /* espaçamento interno */
+      text-decoration: none;     /* remove sublinhado */
+      display: block;            /* faz o link ocupar a linha inteira */
+      text-align: left;          /* alinha texto à esquerda */
+    }
+
+    /* Efeito hover dentro do dropdown */
+    .dropdown-content a:hover {
+      background-color: #ddd;    /* muda fundo ao passar o mouse */
+    }
+
+    /* Mostrar o conteúdo do dropdown ao passar o mouse */
+    .dropdown:hover .dropdown-content {
+      display: block;            /* mostra o menu suspenso */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-horizontal">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+
+    <!-- Dropdown -->
+    <div class="dropdown">
+      <button class="dropbtn">Serviços ▾</button>
+      <div class="dropdown-content">
+        <a href="#">Design Web</a>
+        <a href="#">Desenvolvimento</a>
+        <a href="#">Consultoria</a>
+      </div>
+    </div>
+
+    <a href="#">Contato</a>
+  </div>
+
+</body>
+</html>
+

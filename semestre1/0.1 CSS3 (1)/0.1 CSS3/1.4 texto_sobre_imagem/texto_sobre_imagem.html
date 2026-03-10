@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Texto sobre Imagem</title>
+  <style>
+    .container {
+      position: relative;       /* Define o contexto de posicionamento */
+      width: 400px;
+      height: 300px;
+    }
+
+    .imagem {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .texto-sobreposto {
+      position: absolute;       /* Posiciona em relação ao container */
+      top: 50%;                 /* Centraliza verticalmente */
+      left: 50%;                /* Centraliza horizontalmente */
+      transform: translate(-50%, -50%); /* Ajusta para centralizar de verdade */
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="container">
+    <img src="skate.jpg" Imagem Exemplo" class="imagem">
+    <div class="texto-sobreposto">Skate na veia</div>
+  </div>
+
+</body>
+</html>

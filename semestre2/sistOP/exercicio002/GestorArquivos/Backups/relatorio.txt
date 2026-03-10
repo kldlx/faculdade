@@ -1,0 +1,14 @@
+RELATORIO SISTEMA
+
+Data: 05/02/2026
+Hora:  1:18:00,21
+
+Usuario: kl da isa
+Computador: DESKTOP-EK9NPQE
+
+Total de Pastas: 3
+- Backups
+- Documentos
+- Logs
+
+Desenvolvido por: Kauã Oliveira de Lima

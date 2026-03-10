@@ -1,0 +1,11 @@
+CSS : Cascade Style Sheet.
+
+01) instalar no google chrome a extensão web developer chrome.
+02) visualizar o website da amazon, e desabilitar todos os estilos CSS para mostrar o
+    html puro.
+
+Inline style sheet   = coloca o estilo na tag html ou elemento html
+Internal style sheet = coloca o estilo dentro do código
+External style sheet = quando colocamos a formatação do site em um arquivo externo, o que é recomendado.
+
+abrir o link w3shool

@@ -1,0 +1,8 @@
+efeito parallax é um efeito onde as imagens se movem conforme
+a barra de rolagem se move para cima ou para baixo.
+- o efeito parallax é um efeito que trabalha com camadas de imagem, ou seja.
+imagens que são empilhadas e visualizadas uma após a outra.
+
+- cada div, contem uma imagem.
+- entre as imagens, eu posso adicionar conteudos como parágragos e outras divs.
+- o efeito parallax é utilizando o css background-attachment: fixed;

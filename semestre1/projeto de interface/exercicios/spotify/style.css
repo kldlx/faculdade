@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.inicio {
+    background-color: #444;
+    padding: 8px 16px;
+    border-radius: 30px;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 8px 16px;
+    border-radius: 30px;
+}
+
+.pesquisar input {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 8px;
+}
+
+.navegacao a,
+.nav2 a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.button-entrar button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.button-entrar button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Sidebar */
+.container {
+    background-color: #202020;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.biblioteca,
+.playlist,
+.podcast {
+    margin-bottom: 20px;
+}
+
+.biblioteca h3 {
+    margin-bottom: 10px;
+}
+
+.biblioteca a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.playlist, .podcast {
+    background-color: #303030;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.playlist button,
+.podcast button,
+.language {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.playlist button:hover,
+.podcast button:hover,
+.language:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    font-size: 12px;
+}
+
+.footer a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.language {
+    margin-top: 20px;
+}
+
+/* Conteúdo principal */
+.container-musicas {
+    margin-left: 280px;
+    padding: 100px 30px 30px 30px;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.container-musicas section {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-musicas h1 {
+    font-size: 24px;
+}
+
+.container-musicas a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-top: 1px solid #333;
+}
+
+.footer-nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-nav h5 {
+    margin-bottom: 8px;
+}
+
+.instagram i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}

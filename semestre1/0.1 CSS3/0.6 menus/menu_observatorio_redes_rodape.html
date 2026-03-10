@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site com Redes Sociais</title>
+
+  <!-- FONT AWESOME PARA ÍCONES DE REDES SOCIAIS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Reset geral */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Cabeçalho com logo e menu */
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+
+    .navbar a:hover {
+      background-color: #444;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 180px;
+      top: 100%;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #575757;
+    }
+
+    .navbar li:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Botão hamburguer para mobile */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .navbar {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #1a1a1a;
+      }
+
+      .navbar.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .navbar li {
+        width: 100%;
+      }
+
+      .dropdown-content {
+        position: static;
+      }
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    /* Rodapé com ícones sociais */
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00aced; /* cor ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">Observatório do Clima</div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <ul class="navbar" id="menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Notícias</a></li>
+      <li>
+        <a href="#">Sobre o OC ▾</a>
+        <div class="dropdown-content">
+          <a href="#">História</a>
+          <a href="#">Equipe</a>
+          <a href="#">Membros</a>
+        </div>
+      </li>
+      <li>
+        <a href="#">Iniciativas ▾</a>
+        <div class="dropdown-content">
+          <a href="#">SEEG</a>
+          <a href="#">Fakebook.eco</a>
+          <a href="#">Monitor 2045</a>
+        </div>
+      </li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Bem-vindo ao Observatório do Clima</h1>
+    <p>Esse exemplo inclui ícones sociais no rodapé, como os usados no site oficial, usando Font Awesome.</p>
+  </main>
+
+  <!-- Rodapé com redes sociais -->
+  <footer>
+    <p>© 2025 Observatório do Clima - Site Educacional</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <!-- Script do menu hamburguer -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

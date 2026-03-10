@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cor e imagem de fundo</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			/*
+			.fundo {
+				background-color: blue;
+			}*/
+			/*
+			.fundo {
+				
+				background-image: url('imagens/soldier.jpg');
+            */
+
+            /*
+			.fundo {
+				
+				background-image: url('imagens/soldier.jpg');
+				background-repeat:no-repeat ;
+			}
+			*/
+
+				
+			/* repeat-x, repeat-y, no-repeat, repeat */
+			/*
+			.fundo {
+				background-image: url('imagens/soldier.jpg');
+				
+				background-repeat:repeat-x ;
+			}
+			*/
+
+            
+
+			
+
+			.fundo {
+				background-image: url('imagens/soldier.jpg');
+				background-repeat:no-repeat;
+			/*	background-attachment: fixed;*/
+				/* a imagem fica fixa com a barra de rolagem*/
+				/*scroll - rola junto com a barra de rolagem*/
+				background-position: top left;
+				/*1= valor horizontal, 2= vertical*/
+				/*valores= top, bottom,*/
+			}
+			
+			/*se usar png com fundo transparente*/
+			.fundo_e_imagem {
+				background: blueviolet url('imagens/soldier.jpg');
+				background-repeat:repeat-x;
+				
+			}
+
+
+			h1 {
+				/*background-image: url('imagens/nature.jpg');*/
+
+				/* repeat-x, repeat-y, no-repeat, repeat */
+				background-repeat: repeat-x;
+
+				/*scrool , fixed*/
+				background-attachment: scroll;
+
+				/* 
+				primeiro valor: left, center, right 
+				segundo valor: top, center, bottom 
+				*/
+				background-position: center center;
+			}
+
+			
+			
+		</style>
+
+	</head>
+	<body class="fundo_e_imagem">
+
+		<h1>
+			Conteúdo de título 1 <br>
+		</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at tortor a orci sodales efficitur ac quis augue. Ut ultricies nec diam in dignissim. Donec suscipit egestas sem.</p>
+
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at tortor a orci sodales efficitur ac quis augue. Ut ultricies nec diam in dignissim. Donec suscipit egestas sem.</p>
+		
+
+	</body>
+
+</html>

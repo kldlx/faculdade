@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+-div = divisão, bloco, contêiner. Ocupam todo o espaço da tela. Ficam um abaixo do outro
+- span = parte, porção, fração. Ocupam apenas o espaço necessário para o conteúdo que contém.
+O elemento <span> é um contêiner, funciona
+	basicamente como uma div, só que  em linha  ou seja ele não quebra a linha . Ele fica um na frente do outro.
+
+
+div = vem do inglês division. ou seja, utilizado para dividir o conteúdo em partes e estruturar o layout da página.
+O elemento <div> é um contêiner genérico que pode conter outros elementos HTML e aplicar estilos a eles.
+span = é utilizado para aplicar estilos em partes menores do conteúdo, como uma palavra ou uma frase.
+
+Vamos montar o layout de uma página web utilizando divs e spans.
+vamos utilizar o website observatório do clima como exemplo.https://oc.eco.br/
+-->
+<html>
+	<head>
+		<title>Div e Span</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			/*cabeçalho*/
+			#header_layout {
+				background: orange;
+				padding: 50px;
+				margin-top: -8px;
+				margin-left: -8px;	
+				margin-right: -8px;	
+				margin-bottom: -8px;
+			}
+			
+			#conteudo {
+				background: red;
+			}
+
+			
+
+			.produto {
+				background: gray;
+				margin: 10px;
+			}
+
+			.azul{
+				color: blue;
+			}
+
+			#rodape {
+				background: green;
+				padding: 50px;
+				margin-left: -8px;	
+				margin-right: -8px;	
+					
+				
+			}
+
+			#blocos_linha {
+				background:blueviolet;
+				padding: 25px;
+				margin-left: -2px;
+				
+					
+				
+			}
+
+		</style>
+
+	</head>
+	<body>
+  <!-- 
+  layout desta pagina: header, conteudo e footer ou rodape.
+  -->
+	<!--header-->	
+  	<div id="header_layout">
+       <img src="imagens/logo.png" width="150" height="50" alt="Logo">
+	   <ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Sobre</a></li>
+		<li><a href="#">Contato</a></li>
+		<li><a href="#">Produtos</a></li>
+		<li><a href="#">Serviços</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">Cadastro</a></li>
+		<li><a href="#">Sair</a></li>
+		<li><a href="#">Ajuda</a></li>
+		<li><a href="#">FAQ</a></li>
+		<li><a href="#">Termos de Uso</a></li>
+		<li><a href="#">Política de Privacidade</a></li>
+		<li><a href="#">Mapa do Site</a></li>
+		<li><a href="#">Trabalhe Conosco</a></li>
+	   </ul>
+  	</div>
+
+	<!--conteudo-->
+  	<div>
+	   carrosel 1 imagens
+  	</div>
+	<div>
+		carrosel 2 empresas parceiras (conheça nossos membros)
+	</div>
+	<!--Inicio das noticias-->
+	<div> <!--inicio div principal para noticias-->
+		<div>
+			noiticia 1
+		</div>
+		
+		<div>
+			noiticia 2
+		</div>
+
+		<div>
+			noiticia 3	
+		</div>
+		
+		<div>
+			noiticia 4
+		</div>
+		
+		<div>
+			noiticia 5
+		</div>
+		
+		<div>
+			noiticia 6
+		</div>
+		
+	</div><!-- fim div principal noticias-->
+
+	<div> <!-- Nossas iniciativas-->
+		iniciativas 1
+	</div>
+
+	<div> <!-- Nossas iniciativas-->
+		iniciativas 2
+	</div><!--Newsletter-->
+		iniciativas 3
+	</div>
+
+	<!--rodape-->
+	<div id="rodape">
+	   rodape
+  	</div>
+
+	<!--span-->
+	<span id="blocos_linha">Rodrigo</span>
+
+	<span id="blocos_linha">
+		<span class="azul">	gonçalves</span>
+
+		<!-- para finalizar, colocar as spans dentro da div rodapé-->
+	</body>
+</html>

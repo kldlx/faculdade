@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuantes</title>
+<!-- utilizando a propriedade float para
+colocar as divs lado a lado
+- opções: float left, float right, none 
+perceba que o float, retira o container do fluxo padrão. e segue o outro fluxo.
+- logo após organizar os blocos flutuantes, é necessário limpar
+o fluxo de flutuação, para que elementos abaixo dos blocos flutuantes possam ser adicionados.
+para isso usamos o css clear.
+-->
+
+<!--
+ Colocando div de fundo verde para demonstrar divs flutantes dentro de um container com clear.
+-->
+
+<style type="text/css">
+    /*
+    perceba que aqui, não coloquei tamanho fixo. Pois quero que a 
+    div de fundo verde, se ajuste ao tamanho dos elementos flutuantes.
+     */
+    
+    .principal{
+                
+        background-color: green;
+        border: solid 5px black
+
+        
+    }
+    
+    .conteudo1 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        border: solid 1px;
+        margin: 10px;
+        float: left;
+    }
+
+    .clear{
+        /*left, right ou both*/
+        clear:left
+    }
+
+
+    </style>
+</head>
+
+
+<body>
+
+<!-- inicio div principal-->
+<div class="principal">
+
+    <div class="conteudo1">conteudo 1</div>
+    <div class="conteudo1">conteudo 2</div>
+    <div class="conteudo1">conteudo 3</div>
+
+   <!-- 
+    Aqui, crio uma div vazia para o fluxo flutuante seja interrompido,
+    e a div de fundo verde, se ajuste ao tamanho dos elementos flutuantes.
+     --> 
+
+     <div class="clear">
+        <!-- div vazia para o fluxo flutuante seja interrompido -->
+     </div>
+</div> <!-- fim div principal-->
+
+    
+   
+    
+
+</body>
+</html>

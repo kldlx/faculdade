@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Inspirado - Observatório do Clima</title>
+  <style>
+    /* RESET GERAL */
+    * {
+      margin: 0; /* remove todas as margens padrão */
+      padding: 0; /* remove todos os espaçamentos internos padrão */
+      box-sizing: border-box; /* controla a largura/altura com padding e border inclusos */
+    }
+
+    /* CONFIGURAÇÕES DO CORPO */
+    body {
+      font-family: Arial, sans-serif; /* define a fonte padrão */
+      background-color: #f4f4f4; /* cor de fundo clara para todo o site */
+    }
+
+    /* CABEÇALHO COM LOGO E MENU */
+    header {
+      background-color: #1a1a1a; /* fundo escuro */
+      color: white; /* texto branco */
+      padding: 10px 20px; /* espaçamento interno */
+      display: flex; /* usa flexbox para layout horizontal */
+      justify-content: space-between; /* separa logo e menu */
+      align-items: center; /* alinha verticalmente */
+      flex-wrap: wrap; /* permite quebra de linha em telas pequenas */
+    }
+
+    .logo {
+      font-size: 24px; /* tamanho da fonte do logotipo */
+      font-weight: bold; /* deixa o texto em negrito */
+    }
+
+    /* MENU PRINCIPAL */
+    .navbar {
+      display: flex; /* itens lado a lado */
+      list-style: none; /* remove marcadores de lista */
+    }
+
+    .navbar li {
+      position: relative; /* necessário para posicionar dropdown de forma absoluta */
+    }
+
+    .navbar a {
+      color: white; /* texto branco */
+      text-decoration: none; /* remove sublinhado */
+      padding: 14px 20px; /* espaçamento interno do link */
+      display: block; /* área clicável em bloco */
+    }
+
+    .navbar a:hover {
+      background-color: #444; /* muda o fundo ao passar o mouse */
+    }
+
+    /* DROPDOWN */
+    .dropdown-content {
+      display: none; /* começa escondido */
+      position: absolute; /* flutua abaixo do item pai */
+      background-color: #333; /* fundo escuro */
+      min-width: 180px; /* largura mínima */
+      top: 100%; /* posiciona abaixo do botão */
+      z-index: 1; /* traz para frente se sobreposto */
+    }
+
+    .dropdown-content a {
+      color: white; /* texto branco */
+      padding: 12px 16px; /* espaçamento interno dos itens */
+      display: block; /* cada item ocupa linha inteira */
+    }
+
+    .dropdown-content a:hover {
+      background-color: #575757; /* muda o fundo no hover */
+    }
+
+    .navbar li:hover .dropdown-content {
+      display: block; /* exibe menu ao passar o mouse */
+    }
+
+    /* BOTÃO HAMBURGUER (MOBILE) */
+    .menu-toggle {
+      display: none; /* escondido no desktop */
+      flex-direction: column; /* empilha barrinhas */
+      cursor: pointer; /* cursor de clique */
+    }
+
+    .menu-toggle div {
+      width: 25px; /* largura da barrinha */
+      height: 3px; /* altura da barrinha */
+      background-color: white; /* cor branca */
+      margin: 4px 0; /* espaçamento entre as barrinhas */
+    }
+
+    /* RESPONSIVIDADE PARA TELAS PEQUENAS */
+    @media (max-width: 768px) {
+      .navbar {
+        display: none; /* escondido por padrão */
+        width: 100%; /* ocupa toda a largura */
+        flex-direction: column; /* lista vertical */
+        background-color: #1a1a1a; /* mesma cor do cabeçalho */
+      }
+
+      .navbar.show {
+        display: flex; /* mostra o menu ao clicar no botão */
+      }
+
+      .menu-toggle {
+        display: flex; /* exibe o botão hamburguer */
+      }
+
+      .navbar li {
+        width: 100%; /* itens ocupam largura total */
+      }
+
+      .dropdown-content {
+        position: static; /* não flutua no mobile */
+      }
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    main {
+      padding: 20px; /* espaço interno ao redor do conteúdo */
+    }
+
+    /* RODAPÉ */
+    footer {
+      background-color: #1a1a1a; /* fundo escuro */
+      color: white; /* texto branco */
+      text-align: center; /* centraliza o conteúdo */
+      padding: 10px; /* espaçamento interno */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO COM LOGO E MENU -->
+  <header>
+    <div class="logo">Observatório do Clima</div>
+
+    <!-- BOTÃO HAMBURGUER -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- MENU PRINCIPAL -->
+    <ul class="navbar" id="menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Notícias</a></li>
+      <li>
+        <a href="#">Sobre o OC ▾</a>
+        <div class="dropdown-content">
+          <a href="#">História</a>
+          <a href="#">Equipe</a>
+          <a href="#">Membros</a>
+        </div>
+      </li>
+      <li>
+        <a href="#">Iniciativas ▾</a>
+        <div class="dropdown-content">
+          <a href="#">SEEG</a>
+          <a href="#">Fakebook.eco</a>
+          <a href="#">Monitor 2045</a>
+        </div>
+      </li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <h1>Bem-vindo ao Observatório do Clima</h1>
+    <p>Esse é um site de exemplo inspirado no menu do site oficial. Aqui seus alunos podem aprender como construir menus modernos com HTML e CSS.</p>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    © 2025 Observatório do Clima - Site Educacional
+  </footer>
+
+  <!-- SCRIPT PARA ABRIR E FECHAR MENU NO MOBILE -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

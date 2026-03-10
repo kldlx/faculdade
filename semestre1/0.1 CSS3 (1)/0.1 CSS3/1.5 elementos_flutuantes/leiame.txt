@@ -1,0 +1,9 @@
+Fazer o arquivo elementos flutuantes_2 a par e passo,
+para que entender corretamento o funcionamanto 
+de containers flutuantes.
+
+
+OBS) após utilizar containers flutuantes, utilizar o CSS clear, para interromper o fluxo de flutuação 
+para que novos elementos htmls possam ser adicionados.
+
+ir copiando e colando as divs com conteudo para enchegar o comportamento geral

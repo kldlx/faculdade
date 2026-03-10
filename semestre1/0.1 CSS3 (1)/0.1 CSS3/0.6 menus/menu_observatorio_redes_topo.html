@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observatório do Clima - Menu com Redes Sociais</title>
+
+  <!-- Font Awesome para ícones de redes sociais -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* RESET BÁSICO PARA TODOS OS ELEMENTOS */
+    * {
+      margin: 0; /* remove margens externas */
+      padding: 0; /* remove espaçamentos internos */
+      box-sizing: border-box; /* inclui padding e border na largura total */
+    }
+
+    /* ESTILO DO CORPO DA PÁGINA */
+    body {
+      font-family: Arial, sans-serif; /* define a fonte padrão */
+      background-color: #f4f4f4; /* cor de fundo clara */
+    }
+
+    /* CABEÇALHO (engloba top-bar e menu principal) */
+    header {
+      background-color: #1a1a1a; /* cor escura do cabeçalho */
+      color: white; /* cor do texto no cabeçalho */
+    }
+
+    /* BARRA SUPERIOR COM ÍCONES DAS REDES SOCIAIS */
+    .top-bar {
+      display: flex; /* coloca os ícones lado a lado */
+      justify-content: flex-end; /* alinha os ícones à direita */
+      padding: 5px 20px; /* espaçamento interno superior/lateral */
+    }
+
+    .top-bar a {
+      color: white; /* cor dos ícones */
+      margin-left: 10px; /* espaçamento entre ícones */
+      font-size: 16px; /* tamanho dos ícones */
+      transition: color 0.3s; /* animação de troca de cor ao passar o mouse */
+    }
+
+    .top-bar a:hover {
+      color: #00aced; /* cor azul ao passar o mouse sobre o ícone */
+    }
+
+    /* CONTAINER DO MENU (logotipo + menu principal) */
+    .menu-container {
+      display: flex; /* elementos lado a lado */
+      justify-content: space-between; /* separa logo e menu */
+      align-items: center; /* alinha verticalmente */
+      padding: 10px 20px; /* espaço interno do container */
+      flex-wrap: wrap; /* permite quebra de linha em telas pequenas */
+    }
+
+    .logo {
+      font-size: 24px; /* tamanho do texto do logotipo */
+      font-weight: bold; /* deixa o logotipo em negrito */
+    }
+
+    /* MENU PRINCIPAL EM FORMA DE LISTA HORIZONTAL */
+    .navbar {
+      display: flex; /* itens lado a lado */
+      list-style: none; /* remove os marcadores da lista */
+    }
+
+    .navbar li {
+      position: relative; /* permite posicionar dropdown abaixo */
+    }
+
+    .navbar a {
+      color: white; /* cor do texto dos links */
+      text-decoration: none; /* remove sublinhado */
+      padding: 14px 20px; /* espaçamento interno dos links */
+      display: block; /* área clicável em bloco */
+    }
+
+    .navbar a:hover {
+      background-color: #444; /* muda o fundo ao passar o mouse */
+    }
+
+    /* MENU DROPDOWN */
+    .dropdown-content {
+      display: none; /* esconde o dropdown inicialmente */
+      position: absolute; /* posiciona abaixo do item pai */
+      background-color: #333; /* cor de fundo escura */
+      min-width: 180px; /* largura mínima */
+      top: 100%; /* posiciona logo abaixo do link pai */
+      z-index: 1; /* garante que fique acima de outros elementos */
+    }
+
+    .dropdown-content a {
+      color: white; /* cor do texto */
+      padding: 12px 16px; /* espaçamento interno dos itens */
+      display: block; /* cada item ocupa linha inteira */
+    }
+
+    .dropdown-content a:hover {
+      background-color: #575757; /* muda o fundo ao passar o mouse */
+    }
+
+    .navbar li:hover .dropdown-content {
+      display: block; /* exibe o menu dropdown ao passar o mouse */
+    }
+
+    /* BOTÃO HAMBURGUER - VISÍVEL EM TELAS PEQUENAS */
+    .menu-toggle {
+      display: none; /* não visível em telas grandes */
+      flex-direction: column; /* empilha as barrinhas */
+      cursor: pointer; /* muda o cursor para indicar clique */
+    }
+
+    .menu-toggle div {
+      width: 25px; /* largura da barrinha */
+      height: 3px; /* altura da barrinha */
+      background-color: white; /* cor branca das barrinhas */
+      margin: 4px 0; /* espaçamento entre as barrinhas */
+    }
+
+    /* MEDIA QUERY PARA TELAS ATÉ 768px */
+    @media (max-width: 768px) {
+      .navbar {
+        display: none; /* oculta o menu inicialmente no mobile */
+        width: 100%; /* ocupa toda a largura */
+        flex-direction: column; /* itens em coluna */
+        background-color: #1a1a1a; /* fundo igual ao do cabeçalho */
+      }
+
+      .navbar.show {
+        display: flex; /* mostra o menu quando ativado */
+      }
+
+      .menu-toggle {
+        display: flex; /* exibe o botão hamburguer no mobile */
+      }
+
+      .navbar li {
+        width: 100%; /* cada item ocupa toda a linha */
+      }
+
+      .dropdown-content {
+        position: static; /* dropdown segue o fluxo normal no mobile */
+      }
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    main {
+      padding: 20px; /* espaçamento interno do conteúdo */
+    }
+
+    /* RODAPÉ */
+    footer {
+      background-color: #1a1a1a; /* fundo escuro */
+      color: white; /* texto branco */
+      text-align: center; /* centraliza o texto */
+      padding: 10px; /* espaçamento interno */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO COM REDES SOCIAIS E MENU -->
+  <header>
+
+    <!-- BARRA SUPERIOR COM ÍCONES -->
+    <div class="top-bar">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- CONTAINER DO MENU PRINCIPAL -->
+    <div class="menu-container">
+      <div class="logo">Observatório do Clima</div>
+
+      <!-- BOTÃO HAMBURGUER -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- MENU PRINCIPAL -->
+      <ul class="navbar" id="menu">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Notícias</a></li>
+        <li>
+          <a href="#">Sobre o OC ▾</a>
+          <div class="dropdown-content">
+            <a href="#">História</a>
+            <a href="#">Equipe</a>
+            <a href="#">Membros</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Iniciativas ▾</a>
+          <div class="dropdown-content">
+            <a href="#">SEEG</a>
+            <a href="#">Fakebook.eco</a>
+            <a href="#">Monitor 2045</a>
+          </div>
+        </li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <h1>Bem-vindo ao Observatório do Clima</h1>
+    <p>Esse modelo mostra como incluir ícones de redes sociais no topo do menu, como no site oficial.</p>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    © 2025 Observatório do Clima - Site Educacional
+  </footer>
+
+  <!-- SCRIPT PARA ATIVAR O MENU HAMBURGUER -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

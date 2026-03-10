@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuantes</title>
+<!-- utilizando a propriedade float para
+colocar as divs lado a lado
+- opções: float left, float right, none 
+perceba que o float, retira o container do fluxo padrão. e segue o outro fluxo.
+- logo após organizar os blocos flutuantes, é necessário limpar
+o fluxo de flutuação, para que elementos abaixo dos blocos flutuantes possam ser adicionados.
+para isso usamos o css clear.
+-->
+
+<!--
+ Geralmente, blocos flutuantes são utiliados para notícias.
+ nota: é preciso ter espaço
+-->
+
+<style type="text/css">
+    .conteudo1 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        border: solid 1px;
+        margin: 10px;
+    }
+
+
+/*
+ alinhando os elementos todos À esquerda com float:left
+  as divs, vão se alinhando a esquerda para ocuparem os espaços a esquerda.
+  automaticamente, todas as divs ficam concorrendo com o espaço restante, caso houve novas divs.
+*/
+
+.esquerda{
+
+    width: 150px;
+    height: 150px;
+    border: solid 1px;
+    margin:2px;
+    padding: 5px;
+    float:left;
+}
+    /*
+    .conteudo2 {
+        width: 150px;
+        height: 150px;
+        background-color:red;
+        border: solid 1px;
+        margin: 10px;
+        float: right;
+    }
+        */
+
+    .clear{
+        /*left, right ou both*/
+        clear:left
+    }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="esquerda">conteudo 1</div>
+    <div class="esquerda">conteudo 2</div>
+    <div class="esquerda">conteudo 3</div>
+   
+    <!--paragrafor para demonstrar a utilização do clear-->
+    <!--perceba que o texto fica ao redor dos containers.
+    é preciso utilizar a classe clear, para que o fluxo de fluatação seja interrompido.
+    -->
+    <!--
+    <p class="clear">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic maiores officia non iste nihil, earum, iure architecto, ad esse odit delectus? Obcaecati beatae deleniti, rerum ex nemo praesentium repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic maiores officia non iste nihil, earum, iure architecto, ad esse odit delectus? Obcaecati beatae deleniti, rerum ex nemo praesentium repellat.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic maiores officia non iste nihil, earum, iure architecto, ad esse odit delectus? Obcaecati beatae deleniti, rerum ex nemo praesentium repellat.
+    </p>
+
+    -->
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax</title>
+	<meta charset="utf-8">
+	
+	<style type="text/css">
+		
+		/* Configuração padrão da página
+		-------------------------------*/
+		body, html {
+			margin: 0;
+			font: 16px "Lato", sans-serif;
+			color: #777;
+			height: 100%; /* aqui está o truque  do parallax com altura 100%*/
+			width: 100%; /* aqui está o truque  do parallax com largura 100%*/
+			
+		}
+
+		.conteudo {
+			color: #777;
+			background-color: white;
+			text-align: justify;
+			padding: 50px 80px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			color: #111;
+			text-align: center;
+		}
+
+		/* Efeito Parallax
+		-------------------------------*/
+
+		/* bloco1 e bloco2 são as divs que vão ter o efeito parallax. Formatação padrão para os dois blocos
+		------------------------	*/
+		.bloco1, .bloco2, .bloco3, .bloco4, .bloco5, .bloco6, .bloco7 {
+			border: 1px solid red;
+			height: 100%; /*altura 100% da tela*/
+			width: 100%; /* largura 100% da tela*/
+			background-size: cover; /* auto 100% para manter a proporção da imagem*/
+			background-repeat: no-repeat;
+			opacity: 0.95; /* opacidade 80% */
+			background-position: center; /* centraliza a imagem ao movimentar a tela*/
+			background-attachment: fixed; /* aqui está o truque do parallax*/
+
+
+			}
+		/*bloco1 é a div que vai ter a imagem 1
+		----------------*/
+		.bloco1 {
+		 background-image: url(imagens/image1.jpg);
+		}
+
+		/*bloco 2 é a div que vai ter a imagem 2
+		----------------------------*/
+		.bloco2 {
+			background-image: url(imagens/image2.jpg);
+			
+		}
+
+
+		/*bloco 3 é a div que vai ter a imagem 3
+		----------------------------*/
+		.bloco3 {
+			background-image: url(imagens/image3.jpg);
+			
+		}
+		/*bloco 4 é a div que vai ter a imagem 4
+		----------------------------*/
+		.bloco4 {
+			background-image: url(imagens/image4.jpg);
+			
+		}
+		/*bloco 5 é a div que vai ter a imagem 5
+		----------------------------*/
+		.bloco5 {
+			background-image: url(imagens/image5.jpg);
+			
+		}
+		/*bloco 6 é a div que vai ter a imagem 6
+		----------------------------*/
+		.bloco6 {
+			background-image: url(imagens/image6.jpeg);
+			
+		}
+		/*bloco 7 é a div que vai ter a imagem 7
+		----------------------------*/
+		.bloco7 {
+			background-image: url(imagens/image7.jpg);
+			
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="bloco1">
+		bloco 1 jow!!!	
+	</div>
+
+	<div class="conteudo">
+		<h3>Conteudo entre o bloco 1 e 2 </h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper.
+		Aliquam erat volutpat. Donec nec ligula ac nunc efficitur facilisis. Donec id ligula a enim fringilla tincidunt.
+		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		</p>
+	</div>
+
+	<div class="bloco2">
+		bloco 2
+	</div>
+
+
+		<div class="conteudo">
+		<h3>Conteudo entre o bloco 2 e 3 </h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper.
+		Aliquam erat volutpat. Donec nec ligula ac nunc efficitur facilisis. Donec id ligula a enim fringilla tincidunt.
+		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		</p>
+	</div>
+
+	<div class="bloco3">
+		
+		<h3>Parallax bloco3, Texto dentro do bloco</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper.
+		Aliquam erat volutpat. Donec nec ligula ac nunc efficitur facilisis. Donec id ligula a enim fringilla tincidunt.
+		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		</p>
+	</div>
+
+	<div class="bloco4">
+		<h3>Parallax bloco4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper.
+		Aliquam erat volutpat. Donec nec ligula ac nunc efficitur facilisis. Donec id ligula a enim fringilla tincidunt.
+		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		</p>
+	</div>
+	
+	<div class="bloco5">
+		<h3>Parallax bloco5</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper.
+		Aliquam erat volutpat. Donec nec ligula ac nunc efficitur facilisis. Donec id ligula a enim fringilla tincidunt.
+		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		</p>
+	</div>
+	
+	<div class="bloco6">
+		<h3>Parallax bloco6</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper.
+		Aliquam erat volutpat. Donec nec ligula ac nunc efficitur facilisis. Donec id ligula a enim fringilla tincidunt.
+		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		</p>
+	</div>
+	
+	<div class="bloco7">
+		<h3>Parallax bloco7</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper.
+		Aliquam erat volutpat. Donec nec ligula ac nunc efficitur facilisis. Donec id ligula a enim fringilla tincidunt.
+		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		Duis ac nunc nec ligula efficitur fringilla. Donec id ligula a enim fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		</p>
+	</div>
+
+
+
+</body>
+</html>

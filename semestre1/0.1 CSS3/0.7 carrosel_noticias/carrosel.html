@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel de Notícias</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* ÁREA DO CARROSSEL */
+    .carousel-container {
+      width: 100%;
+      overflow: hidden; /* esconde o que passa para os lados */
+      background-color: #e0e0e0; /* cor de fundo leve */
+      margin-top: 10px; /* separação do menu */
+    }
+
+    /* LINHA INTERNA PARA DESLIZAR */
+    .carousel-slide {
+      display: flex; /* coloca os itens lado a lado */
+      transition: transform 0.5s ease-in-out; /* animação suave */
+    }
+
+    /* CADA NOTÍCIA */
+    .carousel-item {
+      min-width: 100%; /* ocupa 100% da tela */
+      padding: 40px 20px; /* espaçamento interno */
+      background-color: #fff; /* fundo branco dos cards */
+      text-align: center; /* centraliza o conteúdo */
+    }
+
+    .carousel-item h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .carousel-item p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* BOTÕES DE NAVEGAÇÃO */
+    .carousel-buttons {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .carousel-buttons button {
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .carousel-buttons button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CARROSSEL DE NOTÍCIAS -->
+  <div class="carousel-container">
+    <div class="carousel-slide" id="carouselSlide">
+      
+      <!-- ITEM 1 -->
+      <div class="carousel-item">
+        <h2>Notícia 1</h2>
+        <p>Observatório do Clima lança novo relatório sobre emissões de carbono.</p>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="carousel-item">
+        <h2>Notícia 2</h2>
+        <p>Brasil registra recorde de desmatamento na Amazônia em 2025.</p>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="carousel-item">
+        <h2>Notícia 3</h2>
+        <p>Governo propõe novas metas para a redução de gases de efeito estufa.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BOTÕES PARA AVANÇAR OU VOLTAR -->
+  <div class="carousel-buttons">
+    <button onclick="prevSlide()">❮ Anterior</button>
+    <button onclick="nextSlide()">Próxima ❯</button>
+  </div>
+
+  <!-- SCRIPT DO CARROSSEL -->
+  <script>
+    let slideIndex = 0;
+    const slide = document.getElementById('carouselSlide');
+    const totalSlides = document.querySelectorAll('.carousel-item').length;
+
+    // Função para avançar
+    function nextSlide() {
+      slideIndex = (slideIndex + 1) % totalSlides;
+      updateSlide();
+    }
+
+    // Função para voltar
+    function prevSlide() {
+      slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    }
+
+    // Atualiza o carrossel
+    function updateSlide() {
+      slide.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
+    }
+  </script>
+
+</body>
+</html>

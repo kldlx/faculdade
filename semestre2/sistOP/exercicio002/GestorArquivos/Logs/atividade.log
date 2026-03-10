@@ -1,0 +1,33 @@
+[27/10/2025 16:58:32,87] [INICIAR SISTEMA] [SUCESSO] GESTOR DE ARQUIVOS INICIADO 
+[27/10/2025 16:58:32,88] [VERIFICAR_PASTA_PRINCIPAL] [SUCESSO] Pasta principal ja existe 
+[27/10/2025 16:58:32,90] [CRIAR_PASTA_BACKUPS] [SUCESSO] Pasta backups criada 
+[27/10/2025 16:58:32,91] [CRIAR_PASTA_DOCS] [SUCESSO] Pasta documentos criada 
+[27/10/2025 16:58:32,91] [VERIFICAR_PASTA_LOGS] [SUCESSO] Pasta logs ja existe 
+[27/10/2025 16:58:32,93] [CRIAR_ARQUIVO] [SUCESSO] Arquivo relatorio.txt criado na pasta Documentos 
+[27/10/2025 16:58:32,94] [CRIAR_ARQUIVO] [SUCESSO] Arquivo dados.csv criado na pasta Documentos 
+[27/10/2025 16:58:32,95] [CRIAR_ARQUIVO] [SUCESSO] Arquivo config.ini criado na pasta Documentos 
+[27/10/2025 16:58:33,00] [BACKUP_ARQUIVOS] [SUCESSO] Arquivos copiados de documentos para backup 
+[27/10/2025 16:58:33,01] [CRIAR_BACKUP_FILE] [SUCESSO] Arquivo backup_completo.bak criado com sucesso 
+[27/10/2025 16:58:33,04] [CRIAR_RESUMO] [SUCESSO] Arquivo resumo_execucao.txt criado com sucesso. 
+[24/11/2025 22:49:31,73] [INICIAR SISTEMA] [SUCESSO] GESTOR DE ARQUIVOS INICIADO 
+[24/11/2025 22:49:31,74] [VERIFICAR_PASTA_PRINCIPAL] [SUCESSO] Pasta principal ja existe 
+[24/11/2025 22:49:31,75] [VERIFICAR_PASTA_BACKUPS] [SUCESSO] Pasta backups ja existe 
+[24/11/2025 22:49:31,76] [VERIFICAR_PASTA_DOCS] [SUCESSO] Pasta documentos ja existe 
+[24/11/2025 22:49:31,77] [VERIFICAR_PASTA_LOGS] [SUCESSO] Pasta logs ja existe 
+[24/11/2025 22:49:31,79] [CRIAR_ARQUIVO] [SUCESSO] Arquivo relatorio.txt criado na pasta Documentos 
+[24/11/2025 22:49:31,80] [CRIAR_ARQUIVO] [SUCESSO] Arquivo dados.csv criado na pasta Documentos 
+[24/11/2025 22:49:31,82] [CRIAR_ARQUIVO] [SUCESSO] Arquivo config.ini criado na pasta Documentos 
+[24/11/2025 22:49:31,87] [BACKUP_ARQUIVOS] [SUCESSO] Arquivos copiados de documentos para backup 
+[24/11/2025 22:49:31,88] [CRIAR_BACKUP_FILE] [SUCESSO] Arquivo backup_completo.bak criado com sucesso 
+[24/11/2025 22:49:31,91] [CRIAR_RESUMO] [SUCESSO] Arquivo resumo_execucao.txt criado com sucesso. 
+[05/02/2026  1:18:00,16] [INICIAR SISTEMA] [SUCESSO] GESTOR DE ARQUIVOS INICIADO 
+[05/02/2026  1:18:00,17] [VERIFICAR_PASTA_PRINCIPAL] [SUCESSO] Pasta principal ja existe 
+[05/02/2026  1:18:00,18] [VERIFICAR_PASTA_BACKUPS] [SUCESSO] Pasta backups ja existe 
+[05/02/2026  1:18:00,19] [VERIFICAR_PASTA_DOCS] [SUCESSO] Pasta documentos ja existe 
+[05/02/2026  1:18:00,20] [VERIFICAR_PASTA_LOGS] [SUCESSO] Pasta logs ja existe 
+[05/02/2026  1:18:00,22] [CRIAR_ARQUIVO] [SUCESSO] Arquivo relatorio.txt criado na pasta Documentos 
+[05/02/2026  1:18:00,23] [CRIAR_ARQUIVO] [SUCESSO] Arquivo dados.csv criado na pasta Documentos 
+[05/02/2026  1:18:00,24] [CRIAR_ARQUIVO] [SUCESSO] Arquivo config.ini criado na pasta Documentos 
+[05/02/2026  1:18:00,30] [BACKUP_ARQUIVOS] [SUCESSO] Arquivos copiados de documentos para backup 
+[05/02/2026  1:18:00,31] [CRIAR_BACKUP_FILE] [SUCESSO] Arquivo backup_completo.bak criado com sucesso 
+[05/02/2026  1:18:00,35] [CRIAR_RESUMO] [SUCESSO] Arquivo resumo_execucao.txt criado com sucesso. 

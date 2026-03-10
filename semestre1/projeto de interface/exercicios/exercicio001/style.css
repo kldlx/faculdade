@@ -1,0 +1,97 @@
+/* === RESET CSS (para manter consistência entre navegadores) === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px; /* Base de 1rem */
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #bbf5f7;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* === CONTAINER PADRÃO === */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* === TIPOGRAFIA === */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #b3b3b3;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* === LINKS === */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === BOTÕES === */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* === LAYOUT FLEX & GRID === */
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  /* === RESPONSIVIDADE === */
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* === DARK MODE (opcional) === */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #252525;
+      color: #eee;
+    }
+    a {
+      color: #1e90ff;
+    }
+  }
+  

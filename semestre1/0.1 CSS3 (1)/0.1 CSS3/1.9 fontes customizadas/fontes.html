@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fontes customizadas</title>
+<!--
+	
+fontes customizadas são utilizadas, mesmo quando o usuário não tenha as fontes baixadas no computador.
+você pode baixar as fontes em sites como:
+
+https://www.dafont.com/ usar essa referência para baixar fontes
+transfonter.org para converter fontes no formato woff.
+
+	https://www.fontspace.com/
+	https://www.1001freefonts.com/
+	https://www.fontsquirrel.com/
+	https://www.fontspring.com/
+	https://www.google.com/fonts
+	https://www.fontshop.com/
+
+	e usa-las em seu site, desde que você tenha o direito de uso.
+ - para utilizar a fonte, você deve baixar o arquivo da fonte e colocar na mesma pasta do arquivo html.
+ - a fonte para a web deve ser salva no formato woff, que é o mais utilizado.
+ - depois, você deve usar a tag @font-face para definir a fonte.
+
+-->
+	<style type="text/css">
+		
+		@font-face {
+			font-family: "Road Rage";
+			src: url("fontes/RoadRage.woff");
+		}
+
+		@font-face {
+			font-family: Heart;
+			src: url("fontes/BringHeart.woff");
+		}
+
+		@font-face {
+			font-family: Ancient;
+			src: url("fontes/Ancient-Medium.woff");
+		}
+
+		h1 {
+			font-size: 6em;
+			font-family: Road Rage;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>Fontes Customizadas</h1>
+
+</body>
+</html>
