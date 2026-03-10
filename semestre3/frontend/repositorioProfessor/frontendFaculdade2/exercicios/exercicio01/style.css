@@ -1,0 +1,173 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+header{
+    display: flex;
+    background-color: aliceblue;
+}
+
+.logo img{
+   max-width: 70px;
+   height: auto;
+}
+
+.titulo h1{
+    margin-top: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#divBusca{
+  background-color:#ffffff;
+  border:solid 1px;
+  border-radius:15px;
+  width:300px;
+  height: 32px;
+  margin-top: 13px;
+  margin-left: 490px;
+}
+
+#divBusca img{
+    margin-top: 2px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border-radius:15px;
+  border:none;
+  height:32px;
+  width:260px;
+}
+
+.carrinho img{
+    margin-top: 13px;
+    margin-left: 30px;
+}
+
+.navegacao{
+    margin-top: 20px;
+    margin-left: 280px;
+}
+
+.navegacao a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: dashed;
+    color: black;
+    padding: 20px;
+}
+
+.carrossel{
+    display: flex;
+    align-items: center;
+    margin-left: 510px;
+}
+
+.setaE img{
+    margin-right: 20px;
+    width: 15px;
+    height: auto;
+}
+
+.setad img{
+    margin-left: 20px;
+    width: 15px;
+    height: auto;
+}
+
+.imgF img{
+    border-radius: 20px;
+}
+
+.fraseImpactante{
+    margin-left: 690px; 
+}
+
+.container-frutas{
+    display: flex;
+    margin-left: 205px;
+    margin-top: 50px;
+}
+
+.container-frutas img{
+    width: 250px;
+}
+ 
+.uva, .banana, .apple, .melancia, .goiaba{
+    padding: 20px;
+}
+
+.uva h2, .banana h2, .apple h2, .melancia h2, .goiaba h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.uva h3, .banana h3, .apple h3, .melancia h3, .goiaba h3{
+    text-align: center;
+    font-size: 23px;
+}
+
+.uva button, .banana button, .apple button, .melancia button, .goiaba button{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-color: antiquewhite;
+    background-color: aliceblue;
+    padding: 5px 5px;
+}
+
+footer{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.container-contatos{
+    display: flex;
+    justify-content: center; /* centraliza */
+    gap: 20px; /* espaço entre links */
+    margin-bottom: 10px;
+}
+
+.container-contatos a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container-contatos a:hover{
+    text-decoration: underline;
+}
+
+.direitos{
+    font-size: 15px;
+}
+
