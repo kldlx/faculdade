@@ -7,3 +7,4 @@ Projeto simples pra demonstrar o uso básico do git
 - script.js
 - style.css
 - notas.txt
+- calculadora.c
