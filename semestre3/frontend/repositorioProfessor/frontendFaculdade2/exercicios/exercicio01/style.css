@@ -12,6 +12,10 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.50)), url("imagens/image\ copy\ 2.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 main{
@@ -171,3 +175,112 @@ footer{
     font-size: 15px;
 }
 
+.navegacao a{
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navegacao a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background: green;
+    transition: 0.3s;
+}
+
+.navegacao a:hover{
+    color: green;
+}
+
+.navegacao a:hover::after{
+    width: 100%;
+}
+
+.uva, .banana, .apple, .melancia, .goiaba{
+    padding: 20px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.uva:hover, .banana:hover, .apple:hover, .melancia:hover, .goiaba:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container-frutas img{
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.container-frutas img:hover{
+    transform: scale(1.1);
+}
+
+.uva button, .banana button, .apple button, .melancia button, .goiaba button{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.uva button:hover, .banana button:hover, .apple button:hover, .melancia button:hover, .goiaba button:hover{
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+}
+
+.carrinho img{
+    margin-top: 13px;
+    margin-left: 30px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.carrinho img:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+
+#divBusca{
+  transition: 0.3s;
+}
+
+#divBusca:hover{
+    width: 300px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.container-frutas,
+.fraseImpactante,
+.carrossel{
+    animation: aparecer 1s ease;
+}
+
+@keyframes flutuar{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
+}
+
+.container-frutas img{
+    animation: flutuar 3s infinite ease-in-out;
+}
+
+.container-contatos a{
+    transition: 0.3s;
+}
+
+.container-contatos a:hover{
+    color: green;
+    transform: scale(1.1);
+}
